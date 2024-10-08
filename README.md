@@ -20,4 +20,5 @@ Implement a sticky header or footer to ensure navigation or important informatio
 
 - Implement CSS animations or transitions to enhance user interactions and visual feedback.
 
+**_DEADLINE: Thursday 10/10 at 5pm_**
 Happy coding!
