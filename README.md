@@ -12,7 +12,7 @@
 
 ### Level 2: Additional Requirements
 
-Implement a sticky header or footer to ensure navigation or important information remains visible while scrolling.
+- Implement a sticky header or footer to ensure navigation or important information remains visible while scrolling.
 
 - Create a responsive layout using CSS Flex-box or Grid to ensure proper alignment and positioning of page elements.
 
