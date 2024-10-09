@@ -1,0 +1,410 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #CAD3BD; 
+}
+
+header {
+    background-color: #4A5D23;
+    padding: 4px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+nav .logo img {
+    width: 70px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #6D8B4A;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 80px 20px; 
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #4A5D23; 
+}
+
+.content h3 {
+    color: #213000ff;
+}
+
+.content p {
+    font-size: 18px;
+    color: #4A5D23;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+.button {
+    border: none;
+    border-radius: 3em;
+    box-shadow: 2px 2px 2px #213000ff;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+}
+
+.cta-button {
+    background-color: #4A5D23;
+    color: #fff;
+}
+
+.cta-button:hover {
+    background-color: #6D8B4A;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+#about {
+    margin-top: -200px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 10px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #4A5D23;
+    border-radius: 10px;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flip-card-front h3 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.flip-card-front p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.flip-card-back {
+    background-color: #4A5D23;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    font-size: 16px;
+    border-radius: 10px;
+
+}
+
+.flip-card-back p {
+    font-size: 16px;
+    margin: 0;
+    color: #faf4f4;
+    flex-grow: 2; 
+    text-align: center;
+
+}
+
+#reviews {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#reviews h2 {
+    font-size: 32px;
+    color: #4A5D23;
+    margin-bottom: 40px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.review-box {
+    background-color: #fff;
+    border: 1px solid #4A5D23;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.review-box:hover {
+    transform: translateY(-5px);
+}
+
+.reviewer-name {
+    font-size: 20px;
+    color: #4A5D23;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #4A5D23;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#footer {
+    background-color: #4A5D23;
+    color: white;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color:  #213000ff  ;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+    color: #CAD3BD;
+}
+
+.footer-contact p {
+    font-size: 12px;
+}
+
+.footer-contact a {
+    color: #CAD3BD;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #CAD3BD;
+}
+#newsletter {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-container h2 {
+    font-size: 32px;
+    color: #4A5D23;
+    margin-bottom: 20px;
+}
+
+.newsletter-container p {
+    font-size: 18px;
+    color: #4A5D23;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #4A5D23;
+    border-radius: 5px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.newsletter-form .subscribe-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4A5D23;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form .subscribe-button:hover {
+    background-color: #6D8B4A;
+}
+.buy-now-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #863C1Fff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #76522Bff; 
+}
+
+ /* CSS HEX 
+ --black: #040600ff;
+ --black-bean: #3F1000ff;
+ --pakistan-green: #213000ff;
+ --sienna: #863C1Fff;
+ --kobicha: #76522Bff;
+ --lion: #BF9A67ff;
+ --lion-2: #B68F61ff;
+ --reseda-green: #69744Aff;
+ --beaver: #B1846Dff;
+ --ecru: #D8BC87ff;
+ #A3C9A8; 
+
+
