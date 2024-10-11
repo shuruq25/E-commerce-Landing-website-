@@ -1,8 +1,9 @@
-/* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #CAD3BD; 
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -60,13 +61,13 @@ nav ul li a:hover {
 
 .content h1 {
     font-size: 36px;
-    color: #4A5D23; 
+    color: #213000ff; 
 }
 
-.content h3 {
+.content h3,
+.content h2 {
     color: #213000ff;
 }
-
 .content p {
     font-size: 18px;
     color: #4A5D23;
@@ -94,6 +95,8 @@ nav ul li a:hover {
     background-color: #6D8B4A;
 }
 
+
+
 #home {
     display: flex;
     flex-direction: column;
@@ -101,7 +104,17 @@ nav ul li a:hover {
     justify-content: center;
     height: 100vh;
     text-align: center;
+    background: url('images/background.png') no-repeat center center;
+    background-size: auto 100%; 
+    background-position: center; 
 }
+
+.content {
+    z-index: 1;
+    padding: 120px;
+    color: white;
+}
+
 
 .logo-container {
     margin-bottom: 20px;
@@ -113,9 +126,84 @@ nav ul li a:hover {
 }
 
 #about {
-    margin-top: -200px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 60px 20px;
 }
 
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1 1 50%; 
+    padding: 20px;
+    color: #4A5D23;
+    text-align: left;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #213000;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dot {
+    margin: 0 10px;
+    height: 150px;
+    width: 150px;
+    background-color: #4A5D23;
+    border-radius: 50%; 
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.about-image {
+    flex: 1 1 50%; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
 .card-container {
     display: flex;
     justify-content: center;
