@@ -17,41 +17,59 @@ header {
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    max-width: 100px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
-nav .logo img {
-    width: 70px;
-    height: auto;
+.nav-left {
+    display: flex;
+    align-items: center;
 }
 
-nav ul {
+.nav-left .logo img {
+    width: 70px; 
+    margin-right: 20px; 
+}
+
+.nav-left ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav ul li {
-    margin: 0 15px;
+.nav-left ul li {
+    padding:  10px;
 }
 
-nav ul li a {
+.nav-left ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    padding: 16px;
+}
+
+.nav-left ul li a:hover {
+    background-color: #6D8B4A;
+}
+nav ul li:last-child {
+    float: right;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
     padding: 10px;
 }
 
-nav ul li a:hover {
+.nav-right a:hover {
     background-color: #6D8B4A;
-    border-radius: 5px;
 }
-
 .content {
     padding: 80px 20px; 
     text-align: center;
@@ -173,7 +191,6 @@ nav ul li a:hover {
     width: 150px;
     background-color: #4A5D23;
     border-radius: 50%; 
-    display: inline-block;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -213,8 +230,8 @@ nav ul li a:hover {
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     perspective: 1000px;
     margin: 10px;
 }
@@ -342,7 +359,7 @@ nav ul li a:hover {
     margin: 0;
 }
 
-#footer {
+footer {
     background-color: #4A5D23;
     color: white;
     padding: 20px 10px;
