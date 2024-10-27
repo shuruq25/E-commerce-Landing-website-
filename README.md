@@ -18,7 +18,6 @@ This project aims to create a visually appealing and functional E-commerce landi
 
 - HTML
 - CSS (Flexbox)
-- JavaScript (optional for future enhancements)
 
 ## Getting Started ⚙️
 
